@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
-    "socket.io": "^1.7.4"
+    "socket.io": "^1.7.4",
+	"html-react-parser": "git@github.com:ceresthebest/Tron-Node.js.git"
   },
   "scripts": {
     "start": "node server.js"
