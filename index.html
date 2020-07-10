@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <title>Tron</title>
+</head>
+<body>
+<div class="wrapper">
+    <p class="title">
+        <img src="img/TRON.png" width="290" height="100" alt="Alternate Text" /><br />
+    </p>
+
+    <section id="login">
+        <form>
+            <input type="text" id="username" placeholder="Digita il tuo username" /><br /><br />
+              <button id="login-button" type="input">
+                <span class="highlight"></span>
+                <span class="text">Connettiti</span>
+              </button>
+        </form>
+    </section>
+    <section id="content">
+        <div>
+            <form class="ready">
+                <button id="play-button">
+                    <span class="highlight"></span>
+                    <span class="text">Gioca</span>
+                </button>
+            </form>
+            <span id="joystick"></span>
+            <canvas id="canvas"></canvas>
+            <p id="ping" class="ping"></p>
+        </div>
+        <div id="actions-div">
+            <div id="chat" class="chat"></div>
+        </div>
+        <span id="controls-for-mobile">
+            <button id="hide-button">
+                <span class="highlight"></span>
+                <span class="text">Mostra/Nascondi Chat</span>
+            </button>
+            <button id="button-for-device">
+                <span class="highlight"></span>
+                <span class="text">Muovi/Accelera</span>
+            </button>
+        </span>
+    </section>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/nipplejs.min.js"></script>
+<script src="js/client.js"></script>
+</body>
+</html>
